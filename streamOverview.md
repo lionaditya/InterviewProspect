@@ -321,7 +321,8 @@ public class CreateStream {
 	 List<String> words = Arrays.asList("apple","banana","kivi","cherry");
 		
 	 //Sort based on Size of words
-	   // comparingInt() Accepts a function that extracts an int sort key from a type 	   
+	   // comparingInt() Accepts a function that extracts an int sort key from a type 
+       //and returns a Comparator that compares by that sort key.	   
 	 
 	 //This comparator allow sort this function based on length of String
 	 List<String> sortedWords = words.stream()
