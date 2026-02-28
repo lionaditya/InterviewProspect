@@ -1,0 +1,2 @@
+# Solid Principal
+![alt text](image-210.png)![alt text](image-211.png)![alt text](image-212.png)![alt text](image-213.png)![alt text](image-214.png)![alt text](image-215.png)![alt text](image-216.png)![alt text](image-217.png)![alt text](image-218.png)![alt text](image-219.png)
