@@ -171,4 +171,40 @@ public class Main {
 ```
 # Future
 ![alt text](image-330.png)![alt text](image-331.png)![alt text](image-332.png)![alt text](image-333.png)![alt text](image-334.png)![alt text](image-335.png)![alt text](image-336.png)![alt text](image-337.png)![alt text](image-338.png)![alt text](image-339.png)![alt text](image-340.png)
+# Scheduled Executor Service
+![alt text](image-341.png)![alt text](image-342.png)![alt text](image-343.png)![alt text](image-344.png)![alt text](image-345.png)
+### pgm
+```java
+package com.bharat.simpleprogram.executor;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ScheduledExecutorService schedular = Executors.newScheduledThreadPool(1); 
+		
+		schedular.scheduleAtFixedRate( 
+				() -> System.out.println("Task executed after every 5 seconds "),
+				5, //initial delay
+				5,  //period
+				TimeUnit.SECONDS
+				);
+		
+		schedular.schedule( 
+				() -> {
+					System.out.println("Initating shutdown");
+					schedular.shutdown();
+				}, 20, TimeUnit.SECONDS);		
+		
+	}
+
+}
+```
+# Catch
+![alt text](image-346.png)![alt text](image-347.png)![alt text](image-348.png)
+
+# 10Mar2026
